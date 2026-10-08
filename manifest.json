@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "הורד תמונה דחוסה",
+  "version": "1.0.2",
+  "description": "הורד תמונות בלחיצה ימנית עם כיווץ MozJPEG ושינוי גודל ל-700px",
+  "permissions": [
+    "contextMenus",
+    "downloads",
+    "notifications"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+  },
+  "background": {
+    "service_worker": "dist/background.js",
+    "type": "module"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "mozjpeg-chrome-extension",
+  "version": "1.0.0",
+  "description": "תוסף כרום להורדת תמונות דחוסות עם MozJPEG",
+  "scripts": {
+    "build": "node build.js",
+    "watch": "node build.js --watch"
+  },
+  "dependencies": {
+    "@jsquash/jpeg": "^1.4.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.20.0"
+  }
+}
